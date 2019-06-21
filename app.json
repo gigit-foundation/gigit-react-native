@@ -1,0 +1,30 @@
+{
+    "expo": {
+        "name": "gigit-studio",
+        "description": "gigIt innovation platform for entrepreneurs, freelancers and time bankers",
+        "slug": "gigit-studio-demo",
+        "privacy": "public",
+        "sdkVersion": "26.0.0",
+        "platforms": [
+            "ios",
+            "android"
+        ],
+        "version": "0.0.1",
+        "orientation": "portrait",
+        "icon": "./assets/images/gigit-icon.png",
+        "splash": {
+            "image": "./assets/images/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#101010"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true
+        }
+    }
+}
