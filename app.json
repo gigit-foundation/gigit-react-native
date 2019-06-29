@@ -1,13 +1,14 @@
 {
     "expo": {
-        "name": "gigit-studio",
+        "name": "gigit",
         "description": "gigIt innovation platform for entrepreneurs, freelancers and time bankers",
-        "slug": "gigit-studio-demo",
+        "slug": "gigit-studio",
         "privacy": "public",
-        "sdkVersion": "26.0.0",
+        "sdkVersion": "33.0.0",
         "platforms": [
             "ios",
-            "android"
+            "android",
+            "web"
         ],
         "version": "0.0.1",
         "orientation": "portrait",
