@@ -89,88 +89,19 @@
         "pk_err_bad_key": "Invalid Private Key",
         "pk_err_bad_chars": "Invalid characters in private key!"
     },
-    "icos": {
-        "tab": "ICOs",
-        "intro_1": "Crypto Asset Platform",
-        "intro_2": "Create and trade crypto assets on a next generation DEX",
-        "soon": "Coming Soon!"
+    "sparks": {
+        "tab": "Sparks",
     },
-    "market": {
-        "tab": "Market",
-        "trade_history": "Recent Trades",
-        "date": "Date",
-        "time": "Time",
-        "price": "Price",
-        "amount": "Amount",
-        "select": "Select Market"
+    "skills": {
+        "tab": "Skills"
     },
-    "trade": {
-        "tab": "Trade",
-        "orderbook": {
-            "title": "Order Book",
-            "header": {
-                "total": "Total-",
-                "size": "Size-",
-                "bid": "Bid-",
-                "ask": "Ask-"
-            }
-        },
-        "myorders": {
-            "none": "No Open Orders",
-            "order_cancelled": "Order was cancelled",
-            "cancel_error": "Order was not cancelled-\n{{err}}",
-            "cancel_order": "Cancel your {{side}} for {{size}} {{tradecoin}} @{{price}} {{basecoin}}?",
-            "title": "Open Orders",
-            "cols": {
-                "date": "Date",
-                "side": "Bid/Ask",
-                "price": "Price",
-                "size": "Size"
-            }
-        },
-        "mytrades": {
-            "none": "No trades yet :(",
-            "title": "Order History",
-            "cols": {
-                "date": "Date",
-                "side": "Buy/Sell",
-                "price": "Price",
-                "size": "Size"
-            }
-        },
-        "buy": {
-            "confirm": "Buy {{units}} {{tradeCoin}} for {{total}} {{baseCoin}}?",
-            "empty_base": "You don't have any {{coin}} to buy with, deposit some so you can bid!",
-            "coin": "Buy {{coin}}",
-            "summary": "Buy {{units}} {{coin}}"
-        },
-        "sell": {
-            "confirm": "Sell {{units}} {{tradeCoin}} for {{total}} {{baseCoin}}?",
-            "empty_trade": "You don't have any {{coin}} to sell!",
-            "coin": "Sell {{coin}}",
-            "summary": "Sell {{units}} {{coin}}"
-        },
-        "order": {
-            "combo_invalid": "A valid combination of Price, Units, and/or Total must be provided",
-            "total_exceeds_balance": "Order total {{total}} is more than you have, {{available}}!",
-            "no_price": "Cannot calculate total, price not set!"
-        },
-        "success": "Your {{side}} order was created!"
+    "connect": {
+        "tab": "Connect"
     },
-    "wallet" : {
-        "tab": "Wallet",
-        "export": "Export Wallet Key",
-        "exported": "Wallet Key copied to clipboard:\n'{{key}}'",
-        "token": {
-            "barcoderead_error": "Address appears to be a {{coin}} address, not a {{walletCoin}} address!",
-            "placeholder_withdraw_amount": "Amount to withdraw",
-            "placeholder_withdraw_address": "Enter {{coin}} Address",
-            "none_available": "You don't have any {{coin}} to withdraw :(",
-            "withdraw_confirm": "Withdraw {{amount} to {{address}}?",
-            "withdraw_success": "Withdraw transaction sent!",
-            "deposit_alert": "{{coin}} Deposit",
-            "deposit_address_not_ready": "The deposit address is not yet ready.\nIf this is your first deposit, try again in a few minutes, as it is still being generated.",
-            "deposit_clipboard": "Deposit address copied to clipboard.\n{{address}}"
-        }
+    "work" : {
+        "tab": "Work"
+    },
+    "market" : {
+        "tab": "Market"
     }
 }

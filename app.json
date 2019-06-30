@@ -14,7 +14,7 @@
         "orientation": "portrait",
         "icon": "./assets/images/gigit-icon.png",
         "splash": {
-            "image": "./assets/images/splash.png",
+            "image": "./assets/images/gigit-splash.png",
             "resizeMode": "contain",
             "backgroundColor": "#101010"
         },

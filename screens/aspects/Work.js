@@ -9,8 +9,8 @@ import {
     View,
 } from 'react-native';
 
-import { MonoText } from '../components/StyledText';
-import Colors from '../constants/Colors';
+import { MonoText } from '../../components/StyledText';
+import Colors from '../../constants/Colors';
 
 export default class WorkScreen extends React.Component {
     static navigationOptions = {

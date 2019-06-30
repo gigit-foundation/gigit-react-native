@@ -9,10 +9,10 @@ import {
     View,
 } from 'react-native';
 
-import { MonoText } from '../components/StyledText';
-import Colors from '../constants/Colors';
+import { MonoText } from '../../components/StyledText';
+import Colors from '../../constants/Colors';
 
-export default class MarketScreen extends React.Component {
+export default class ConnectScreen extends React.Component {
     static navigationOptions = {
         
     };

@@ -13,9 +13,9 @@ import {
     FlatList
 } from 'react-native';
 
-import { MonoText } from '../components/StyledText';
-import Colors from '../constants/Colors';
-import { GigItIcon } from '../assets/GigitIcon';
+import { MonoText } from '../../components/StyledText';
+import Colors from '../../constants/Colors';
+import { GigItIcon } from '../../assets/GigitIcon';
 import { sparkSetFilter, sparkAdd } from '../store/actions';
 
 class SparksScreen extends React.Component {
