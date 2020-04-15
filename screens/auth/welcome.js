@@ -2,7 +2,7 @@ import React from 'react';
 import { Actions } from 'react-native-router-flux';
 import { StyleSheet, TouchableOpacity, Text, ScrollView, View, Clipboard } from 'react-native';
 
-import { Colors, Sizes } from '../../config';
+import { Colors, Sizes } from '../../config/config';
 import { ConfirmStyles } from '../../config/styles';
 
 import api from "../../api/apiClient";

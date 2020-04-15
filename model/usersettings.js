@@ -1,6 +1,6 @@
 import { types, process, decorate } from "mobx-state-tree"
 import { T, setLocale } from '../localize/localizer';
-import { Colors, Sizes, Keys } from '../config';
+import { Colors, Sizes, Keys } from '../config/config';
 
 export const initialUserSettings = {
     curNetwork: 'prod',

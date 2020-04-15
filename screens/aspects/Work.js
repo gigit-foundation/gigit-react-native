@@ -1,21 +1,11 @@
 import React from 'react';
-import {
-    Image,
-    Platform,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-} from 'react-native';
+import { observer, inject } from 'mobx-react'
+import { View } from 'react-native';
 
-import { MonoText } from '../../components/StyledText';
-import Colors from '../../constants/Colors';
+import Colors from '../../config/config';
 
+@inject('userStore') @observer
 export default class WorkScreen extends React.Component {
-    static navigationOptions = {
-        
-    };
 
     render() {
         return (

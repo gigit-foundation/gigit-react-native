@@ -1,11 +1,10 @@
 import React from 'react';
 import { Actions } from 'react-native-router-flux';
 import { StyleSheet, TouchableOpacity, Text, TextInput, ScrollView, View, Alert, Clipboard, Image, Modal, KeyboardAvoidingView } from 'react-native';
-import { Container, Content } from 'native-base';
 
-import { LibertariaIcon } from '../../assets/LibertariaIcon';
+import { GigItIcon } from '../../assets/GigitIcon';
 
-import { Colors, Sizes } from '../../config';
+import { Colors, Sizes } from '../../config/config';
 import { ConfirmStyles } from '../../config/styles';
 
 import { T } from '../../localize/localizer';
@@ -76,10 +75,10 @@ export class FirstUse extends React.Component {
 
     render() {
         return (
-            <Container style={_styles.root}>
-                <Content style={_styles.root}>
+            <View style={_styles.root}>
+                <View style={_styles.root}>
                     <View style={{alignItems: 'center'}}>
-                        <Image source={require('../../assets/plutus-stacked.png')} style={_styles.logo} resizeMode='center' />
+                        <Image source={require('../../assets/images/logo-label.png')} style={_styles.logo} resizeMode='center' />
                     </View>
                 { this.state.showPKInput ? 
                     <KeyboardAvoidingView behavior="padding"  style={_styles.import}>
@@ -90,9 +89,9 @@ export class FirstUse extends React.Component {
                             <TextInput value={this.state.pkToImport} style={_styles.input} underlineColorAndroid='transparent' editable={false}
                                     placeholder={T('first_use.pk_hint')} placeholderTextColor={Colors.hintText}/>
                             <TouchableOpacity onPress={this.state.pkValid ? this.onImport : this.onPaste} style={{justifyContent: 'center'}}>
-                                <LibertariaIcon name={this.state.pkValid ? 'go' : 'paste'} style={{alignSelf: 'center', margin: 10}}
-                                                size={Sizes.navIcon} 
-                                                color={this.state.pkValid ? Colors.import : Colors.action}/>
+                                <GigItIcon name={this.state.pkValid ? 'go' : 'paste'} style={{alignSelf: 'center', margin: 10}}
+                                        size={Sizes.navIcon} 
+                                        color={this.state.pkValid ? Colors.import : Colors.action}/>
                             </TouchableOpacity>
                         </View>
                         <Text style={_styles.link} onPress={this.resetImport}>{T('common.cancel')}</Text>
@@ -111,8 +110,8 @@ export class FirstUse extends React.Component {
                         </TouchableOpacity>
                     </View>
                 }
-                </Content>
-            </Container>
+                </View>
+            </View>
         );
     }
 }

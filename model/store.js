@@ -1,7 +1,7 @@
 import { types, destroy, decorate } from "mobx-state-tree"
 
 import { T } from '../localize/localizer';
-import { Keys } from '../config';
+import { Keys } from '../config/config';
 
 import { Market, newMarket } from './market'
 import { Options } from './options'

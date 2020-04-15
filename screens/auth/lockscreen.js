@@ -5,7 +5,7 @@ import {Actions} from 'react-native-router-flux';
 
 import PinInput from '../../components/pininput';
 
-import { Colors, Keys } from '../../config';
+import { Colors, Keys } from '../../config/config';
 import { T } from '../../localize/localizer';
 
 @inject('userStore') @observer
@@ -53,7 +53,7 @@ export class LockScreen extends React.Component {
         var lockSettings = this.props.userStore.lockSettings;
         return (
             <View style={_styles.page}>
-                <Image source={require('../../assets/plutus-stacked.png')} resizeMode='contain' 
+                <Image source={require('../../assets/images/logo-label.png')} resizeMode='contain' 
                     style={{height: 200, width: 200, alignSelf: 'center', margin: 10}}/>
 
             { lockSettings.option === 'none' && 

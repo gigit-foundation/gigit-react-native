@@ -4,11 +4,10 @@ import { observer, inject } from 'mobx-react'
 import { getMembers } from "mobx-state-tree"
 import { Actions } from 'react-native-router-flux';
 import { StyleSheet, Text, TextInput, View, Alert, Platform, NativeModules, Modal, Clipboard, AsyncStorage } from 'react-native';
-import { Container, Content, Row, Header } from 'native-base';
+import { Container, Content, Row, Header } from 'react-native-elements';
 import { Select, Option } from "react-native-chooser";
 import PinInput from '../../components/pininput';
 
-import { PopHeader } from '../../components/popheader';
 import { T, setLocale } from '../../localize/localizer';
 
 import api from "../../api/apiClient";
@@ -16,7 +15,7 @@ import auth from "../../api/auth";
 import { LockSettings, initialLockSettings, LockSchedules, LoginOptions } from '../../model/locksettings'
 import { UserSettings, initialUserSettings } from '../../model/usersettings'
 
-import { Colors, Keys } from '../../config';
+import { Colors, Keys } from '../../config/config';
 
 @inject('userStore') @observer
 export class Settings extends React.Component {
@@ -78,7 +77,7 @@ export class Settings extends React.Component {
                     Alert.alert(T('common.error'), result.err);
                     api.setAPI(!testnet);
                     return false;
-                } 
+                }
             }
             return true;
         } catch (ex) {
@@ -236,7 +235,10 @@ export class Settings extends React.Component {
         var curLocale = options.supportedLocales.find(l => l.value === userSettings.curLocale);
         return (
             <Container style={{backgroundColor: Colors.bodyBG}}>
-                <PopHeader title={T('common.settings')} onPop={this.onPop}/>
+                <Header placement="left"
+                    leftComponent={{ icon: 'back', color: Colors.headerFG }}
+                    centerComponent={{ text: T('common.settings'), color: Colors.headerFG }}
+                    onPop={this.onPop}/>
                 <Content style={_styles.page}>
                     <Row style={_styles.row}>
                         <Text style={_styles.label}>{T('settings.network')}</Text>

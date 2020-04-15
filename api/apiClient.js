@@ -1,5 +1,3 @@
-import { error } from "util";
-
 var rw = require("./requestWrapper.js");
 
 module.exports = {
