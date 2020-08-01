@@ -12,7 +12,7 @@
         "preset": "jest-expo"
     },
     "dependencies": {
-        "elliptic": "^6.5.0",
+        "elliptic": "^6.5.3",
         "ex-react-native-i18n": "0.0.5",
         "expo": "^33.0.0",
         "immutable": "^4.0.0-rc.12",
